@@ -1,0 +1,23 @@
+[
+  {
+    "keys": ["shift+super+alt+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.38, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  {
+    "keys": ["shift+super+alt+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.62, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  }
+]
+
