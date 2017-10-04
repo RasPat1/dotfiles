@@ -1,0 +1,10 @@
+source ~/Programs/z/z.sh
+source ~/Programs/zsh-git-prompt/zshrc.sh
+PROMPT='%B%~%b$(git_super_status)
+-> '
+setopt correct;
+autoload -U compinit
+compinit
+
+alias git=hub
+alias fuck='$(thefuck $(fc -ln -1))'
