@@ -9,6 +9,7 @@
 	merged = !git branch -r --merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset | %h | %an | %Cblue%ar%Creset' -1 | column -t -s '|'
 [core]
 	excludesfile = /Users/Rasesh/.gitignore_global
+	open = !subl `~/git-open.sh`
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
