@@ -1,7 +1,8 @@
-source ~/Programs/z/z.sh
-source ~/Programs/zsh-git-prompt/zshrc.sh
+source ~/dev/repos/utils/z/z.sh
+source ~/dev/repos/utils/zsh-git-prompt/zshrc.sh
+
 PROMPT='%B%~%b$(git_super_status)
--> '
+➜  '
 setopt correct;
 autoload -U compinit
 compinit
