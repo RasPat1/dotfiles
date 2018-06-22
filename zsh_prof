@@ -9,3 +9,4 @@ compinit
 
 alias git=hub
 alias fuck='$(thefuck $(fc -ln -1))'
+alias l="ls -alh"
