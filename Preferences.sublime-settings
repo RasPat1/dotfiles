@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+	"font_face": "Hack",
+	"word_wrap": true,
+	"rulers": [100],
+	"ignored_packages":
+	[
+	]
+}
+
