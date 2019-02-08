@@ -9,7 +9,7 @@
 	merged = !git branch -r --merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset | %h | %an | %Cblue%ar%Creset' -1 | column -t -s '|'
 	recent-branches = branch --sort=committerdate
 [core]
-	excludesfile = /Users/Rasesh/.gitignore_global
+	excludesfile = /Users/ras/.gitignore_global
 	open = !subl `~/git-open.sh`
 [filter "hawser"]
 	clean = git hawser clean %f
@@ -19,3 +19,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[init]
+	templatedir = ~/.git_template

@@ -1,0 +1,22 @@
+# I like to use LolCommits to records stuff
+(lol-commits)[https://github.com/lolcommits/lolcommits-loltext/blob/master/lib/lolcommits/plugin/loltext.rb#L184]
+
+This is roughly the image configuration that I use
+loltext:
+  enabled: true
+  :message:
+    :color: white
+    :font: "/Users/matt/Library/Fonts/Raleway-Light.ttf"
+    :position: C
+    :size: 30
+    :stroke_color: none
+    :uppercase: true
+  :sha:
+    :color: white
+    :font: "/Users/matt/Library/Fonts/Raleway-Light.ttf"
+    :position: S
+    :size: 20
+    :stroke_color: none
+    :uppercase: false
+  :overlay:
+    :enabled: true
