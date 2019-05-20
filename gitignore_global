@@ -40,3 +40,7 @@ Thumbs.db
 # IDE configuration and settings files #
 ########################################
 .idea
+
+# Credentials and Keys #
+########################
+master.key
