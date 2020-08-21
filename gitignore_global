@@ -8,6 +8,10 @@
 ehthumbs.db
 Thumbs.db
 
+# Vim Backups #
+###############
+*.un~
+
 # Compiled source #
 ###################
 *.com
@@ -40,6 +44,7 @@ Thumbs.db
 # IDE configuration and settings files #
 ########################################
 .idea
+*.sublime-workspace
 
 # Credentials and Keys #
 ########################
