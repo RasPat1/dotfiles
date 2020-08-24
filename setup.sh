@@ -5,9 +5,9 @@
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-mkdir ../cli-repos
-git clone https://github.com/rupa/z ../cli-repos
-git clone https://github.com/olivierverdier/zsh-git-prompt ../cli-repos
+mkdir ../cli-utils
+git clone https://github.com/rupa/z ../cli-utils
+git clone https://github.com/olivierverdier/zsh-git-prompt ../cli-utils
 cp zsh_prof ~/.zsh_prof
 echo "source ~/.zsh_prof" >> ~/.zshrc
 cp gitconfig ~/.gitconfig
