@@ -12,3 +12,9 @@ alias python='python3'
 alias git=hub
 alias fuck='$(thefuck $(fc -ln -1))'
 alias l="ls -alh"
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit'
+alias ga='git commit --amend'
+export EDITOR='subl -w'
+

@@ -2,7 +2,7 @@
 # Install chrome, rectangle, alfred, sublime, flycut, iterm, slack, spotify, messages.
 # Update spotlight and alfred hotkeys, 
 
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mkdir ../cli-utils
