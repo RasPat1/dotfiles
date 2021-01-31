@@ -16,5 +16,5 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
 alias ga='git commit --amend'
-export EDITOR='subl -w'
+export EDITOR='code -w'
 
