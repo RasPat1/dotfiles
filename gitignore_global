@@ -45,6 +45,8 @@ Thumbs.db
 ########################################
 .idea
 *.sublime-workspace
+*.code-workspace
+.vscode
 
 # Credentials and Keys #
 ########################
