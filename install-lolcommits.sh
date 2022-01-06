@@ -1,6 +1,6 @@
 brew install imagemagick
 sudo gem install lolcommits
-lolcommits --capture --fork --delay=3
+lolcommits --enable --fork --delay=2
 
 # Let's set up our config as well. No point in taking photos unless we realize our vision.
 cp ./lolcommits-config.yml ~/.lolcommits/config.yml
