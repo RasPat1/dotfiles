@@ -12,6 +12,7 @@ cp zsh_prof ~/.zsh_prof
 echo "source ~/.zsh_prof" >> ~/.zshrc
 cp gitconfig ~/.gitconfig
 cp gitignore_global ~/.gitignore_global
+cp Raleway-Light.ttf cp $HOME/Library/Fonts/
 brew install thefuck
 brew install hub
 
