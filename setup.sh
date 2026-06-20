@@ -17,6 +17,16 @@ cp Raleway-Light.ttf cp $HOME/Library/Fonts/
 brew install thefuck
 brew install hub
 
+# tmux profile + the reflection-* status scripts it shells out to
+cp tmux.conf ~/.tmux.conf
+mkdir -p ~/.tmux
+cp tmux/reflection-*.sh ~/.tmux/
+chmod +x ~/.tmux/reflection-*.sh
+
+# Claude Code status line (referenced from ~/.claude/settings.json)
+mkdir -p ~/.claude
+cp claude/statusline-command.sh ~/.claude/statusline-command.sh
+
 
 # Comment out the part that might want to destroy your ssh key...
 # printf 'github\n\n' ssh-keygen -t rsa -b 4096 -C "raspat1@gmail.com"
