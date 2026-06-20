@@ -1,6 +1,6 @@
 # Set caps lock to command, set key repeat to max and key delay to min, fix trackpad speed.
-# Install chrome, rectangle, alfred, sublime, flycut, iterm, slack, spotify, messages.
-# Update spotlight and alfred hotkeys, 
+# Install chrome, rectangle, raycast, sublime, flycut, iterm, slack, spotify, messages.
+# Update spotlight and raycast hotkeys,
 
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -13,9 +13,9 @@ echo "source ~/.zsh_prof" >> ~/.zshrc
 cp gitconfig ~/.gitconfig
 cp gitignore_global ~/.gitignore_global
 mkdir -p ~/.git_template/hooks
-cp Raleway-Light.ttf cp $HOME/Library/Fonts/
+cp Raleway-Light.ttf $HOME/Library/Fonts/
 brew install thefuck
-brew install hub
+brew install gh   # GitHub CLI (replaces the now-deprecated `hub`)
 
 # tmux profile + the reflection-* status scripts it shells out to
 cp tmux.conf ~/.tmux.conf
@@ -28,7 +28,12 @@ mkdir -p ~/.claude
 cp claude/statusline-command.sh ~/.claude/statusline-command.sh
 
 
-# Comment out the part that might want to destroy your ssh key...
-# printf 'github\n\n' ssh-keygen -t rsa -b 4096 -C "raspat1@gmail.com"
-pbcopy < ~/.ssh/id_rsa.pub
+# SSH key for GitHub. Only generate one if it doesn't already exist, so re-running
+# this script can NEVER clobber an existing key. ed25519 is the modern default
+# (the old `ssh-keygen -t rsa` line could silently overwrite ~/.ssh/id_rsa).
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+  ssh-keygen -t ed25519 -C "raspat1@gmail.com" -f ~/.ssh/id_ed25519
+fi
+pbcopy < ~/.ssh/id_ed25519.pub
+echo "Public SSH key copied to clipboard — add it at https://github.com/settings/keys"
 
