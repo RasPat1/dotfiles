@@ -27,6 +27,9 @@ chmod +x ~/.tmux/reflection-*.sh
 mkdir -p ~/.claude
 cp claude/statusline-command.sh ~/.claude/statusline-command.sh
 
+# Codex CLI status line (merge only the [tui] block; keep machine-local Codex state)
+codex/install-config.sh
+
 
 # SSH key for GitHub. Only generate one if it doesn't already exist, so re-running
 # this script can NEVER clobber an existing key. ed25519 is the modern default
